@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/jeromeetienne/AR.js/aframe/build/aframe-ar.min.js"></script>
+  </head>
+  <body style="margin: 0; overflow: hidden;">
+    <a-scene embedded arjs>
+      <a-light type="directional" position="1 1 1"></a-light>
+      <a-assets>
+        <a-asset-item id="building" src="https://drive.google.com/uc?export=download&id=1B6o56xulflw50QNw-HeVS0ZwFzjZc6dC"></a-asset-item>
+      </a-assets>
+      <a-entity 
+        gltf-model="#building" 
+        position="0 0 0"
+        scale="1 1 1">
+      </a-entity>
+      <a-camera position="0 0 0"></a-camera>
+    </a-scene>
+  </body>
+</html>
